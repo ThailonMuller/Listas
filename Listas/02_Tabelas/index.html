@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>    
+</head>
+<body>
+    <table border="1px" style="width: 100%;"><!-- Semantica de Tabela -->
+        <colgroup>
+            <col style="background-color: #bc7ef7;">
+            <col style="background-color: #ffe4c4;">
+            <col style="background-color: #f2ffbb;">
+        </colgroup>
+        <caption>Lista de Growdevers</caption>
+        <thead>
+            <tr>
+                <th scope="col">Nome </th>
+                <th>Sobrenome </th>
+                <th>Idade </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>João</td>
+                <td colspan="2">Silva</td><!-- colspan mesclagem de coluna -->
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>Alves</td>
+                <td rowspan="2">94</td><!-- rowspan mesclagem de linha -->
+            </tr>
+            <tr>
+                <td>Martins</td>
+                <td>80</td>
+            </tr>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Olá teste</td>
+                </tr>
+            </tfoot>            
+        </tbody>
+    </table>
+        
+</body>
+</html>
